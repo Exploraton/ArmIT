@@ -1,0 +1,30 @@
+﻿Id,AA
+Onoma,Όνομα
+Epitheto,Επίθετο
+Asm,ΑΣΜ
+Klasi,Κλαση
+Seira,Σειρά
+ArithmosPolitikisTaytotitas,Πολιτική ταυτότητα
+ImerominiaGenniseos,Ημερ. Γεννήσεως
+Bathmos,Βαθμός
+Idikotita,Ειδικότητα
+EinaiEfedros,Έφεδρος
+DieythinsiSpitiou,Διεύθυνση σπιτιού
+DieythinsiErgasias,Διεύθυνση εργασίας
+Til_oikias,Τηλ. Οικίας
+Til_kinito,Τηλ. Κινητό
+Til_ergasias,Τηλ. εργασίας
+SeiraEmfanisis,Σειρά Εμφάνισης
+Kathikonta,Καθήκοντα
+Group1,Λόχος
+Group2,Διμοιρία
+Group3,Ομάδα
+Group4,Στοιχείο
+Group5,Υπο-ομάδα5
+ArithmosOplou,Αρ. Όπλου
+ArithmosXyfoloxis,Αρ. Ξυφολόγχης
+AllosOplismos,Άλλος οπλισμός
+Sxolia,Σχόλια
+LoipaStoixia,Λοιπά Στοιχεία
+CreationDate,Ημερ. Δημιουργείας
+LastUpdateDate,Τελευτ. Ενημερωση

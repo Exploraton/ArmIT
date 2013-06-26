@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description>Ονομαστική ιεραρχική κατάσταση, με καθηκοντα, τηλ. επικοινωνίας κλπ</Description>
+  <Author>
+  </Author>
+  <PageHeight>11in</PageHeight>
+  <PageWidth>8.5in</PageWidth>
+  <Width>7.5in</Width>
+  <TopMargin>.25in</TopMargin>
+  <LeftMargin>.25in</LeftMargin>
+  <RightMargin>.25in</RightMargin>
+  <BottomMargin>.25in</BottomMargin>
+  <DataSets>
+    <DataSet Name="Data">
+      <Query>
+        <DataSourceName>DS1</DataSourceName>
+        <CommandText>SELECT Onoma,Epitheto,Asm,Klasi,Bathmos,Idikotita,Til_oikias,Til_kinito,Loxos,Dimiria,Omada,Kathikonta FROM SoldierRecord </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Onoma">
+          <DataField>Onoma</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Epitheto">
+          <DataField>Epitheto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Asm">
+          <DataField>Asm</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="Klasi">
+          <DataField>Klasi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bathmos">
+          <DataField>Bathmos</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Idikotita">
+          <DataField>Idikotita</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Til_oikias">
+          <DataField>Til_oikias</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Til_kinito">
+          <DataField>Til_kinito</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Loxos">
+          <DataField>Loxos</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Kathikonta">
+          <DataField>Kathikonta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Dimiria">
+          <DataField>Dimiria</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Omada">
+          <DataField>Omada</DataField>
+        </Field>
+      </Fields>
+      <fyi:Rows xmlns:fyi="http://www.fyireporting.com/schemas">
+        <Row>
+          <Onoma>Αντρεας</Onoma>
+          <Epitheto>Καπαρτης</Epitheto>
+          <Asm>880115</Asm>
+          <Klasi>111</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>Τ/Φ</Idikotita>
+          <Til_oikias>74576456</Til_oikias>
+          <Til_kinito>45456456</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Κυριάκος</Onoma>
+          <Epitheto>Ξιουρουπας</Epitheto>
+          <Asm>2323</Asm>
+          <Klasi>3323</Klasi>
+          <Bathmos>ΔΝΕΑΣ</Bathmos>
+          <Idikotita>Α/Τ</Idikotita>
+          <Til_oikias>45367812</Til_oikias>
+          <Til_kinito>45678935</Til_kinito>
+          <Loxos>2ος Λόχος</Loxos>
+          <Dimiria>2η Δρία</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Ζαχαρίας</Onoma>
+          <Epitheto>Σταυράκης</Epitheto>
+          <Asm>837976</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>12443128</Til_oikias>
+          <Til_kinito>76335678</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Βαρνάβας</Onoma>
+          <Epitheto>Θεμιστοκλέους</Epitheto>
+          <Asm>567343</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>75551234</Til_oikias>
+          <Til_kinito>44423687</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>2η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Ελευθέριος</Onoma>
+          <Epitheto>Καυστήρας</Epitheto>
+          <Asm>72778</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>62343332</Til_oikias>
+          <Til_kinito>43688975</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>2η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Παναγιώτης</Onoma>
+          <Epitheto>Φλουρέντζου</Epitheto>
+          <Asm>16893</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>56785222</Til_oikias>
+          <Til_kinito>22225675</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>3η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Σπυρίδον</Onoma>
+          <Epitheto>Αντρέου</Epitheto>
+          <Asm>233101</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>98723456</Til_oikias>
+          <Til_kinito>8375849</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>3η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Χρίστος</Onoma>
+          <Epitheto>Βορκάς</Epitheto>
+          <Asm>41003</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>22876587</Til_oikias>
+          <Til_kinito>99376443</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>2η Δρία</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Θεμιστοκλής</Onoma>
+          <Epitheto>Ριγάκης</Epitheto>
+          <Asm>31908</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>2498798</Til_oikias>
+          <Til_kinito>99476476</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>3η Δρία</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Βρασιδας</Onoma>
+          <Epitheto>Νεομενέας</Epitheto>
+          <Asm>9012</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>25767836</Til_oikias>
+          <Til_kinito>96847644</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>2η Δρία</Dimiria>
+          <Omada>2η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Ιωάννης</Onoma>
+          <Epitheto>Κλατσιάς</Epitheto>
+          <Asm>6230</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>23978678</Til_oikias>
+          <Til_kinito>97455464</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>2η Δρία</Dimiria>
+          <Omada>2η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Νικόλας</Onoma>
+          <Epitheto>Φανής</Epitheto>
+          <Asm>4044</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>2i767272</Til_oikias>
+          <Til_kinito>97983744</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>2η Δρία</Dimiria>
+          <Omada>3η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Δημήτρης</Onoma>
+          <Epitheto>Αππιος</Epitheto>
+          <Asm>3604</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>44348777</Til_oikias>
+          <Til_kinito>997876444</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>2η Δρία</Dimiria>
+          <Omada>3η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Ιάσονας</Onoma>
+          <Epitheto>Φιλίπου</Epitheto>
+          <Asm>9281</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>22987764</Til_oikias>
+          <Til_kinito>99873464</Til_kinito>
+          <Loxos>1ος Λόχος</Loxos>
+          <Dimiria>3η Δρία</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Φραγκίσκος</Onoma>
+          <Epitheto>Σταύρου</Epitheto>
+          <Asm>30294</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>228754874</Til_oikias>
+          <Til_kinito>9946644</Til_kinito>
+          <Loxos>2ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>2η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Δεσπότης</Onoma>
+          <Epitheto>Νικάνδρου</Epitheto>
+          <Asm>78390</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>22978687</Til_oikias>
+          <Til_kinito>99456764</Til_kinito>
+          <Loxos>2ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>2η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Γιώργος</Onoma>
+          <Epitheto>Πραστήτης</Epitheto>
+          <Asm>83657</Asm>
+          <Klasi>0</Klasi>
+          <Til_oikias>247777889</Til_oikias>
+          <Til_kinito>96111122</Til_kinito>
+          <Loxos>2ος Λόχος</Loxos>
+          <Dimiria>1η Δρία</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>Γιάννης</Onoma>
+          <Epitheto>Καπουράνης</Epitheto>
+          <Asm>19872</Asm>
+          <Klasi>2012</Klasi>
+          <Til_oikias>24699854</Til_oikias>
+          <Til_kinito>92627333</Til_kinito>
+          <Loxos>3ος Λόχος</Loxos>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>1η Ομάδα</Omada>
+        </Row>
+        <Row>
+          <Onoma>adasg</Onoma>
+          <Epitheto>jyjghj</Epitheto>
+          <Asm>56455</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΔΝΕΑΣ</Bathmos>
+          <Idikotita>Τ/Φ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Διμοιρίτης (ΟΛΜΙΣΤΗΣ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>Ομάδα Διοικήσεως</Omada>
+        </Row>
+        <Row>
+          <Onoma>tttt</Onoma>
+          <Epitheto>rrrrr</Epitheto>
+          <Asm>4452345</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΔΝΕΑΣ</Bathmos>
+          <Idikotita>Τ/Φ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Α.Σ-Σκοπευτής(ΠΟΛ/ΤΗΣ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>1ο Στοιχείο Πολ/λων</Omada>
+        </Row>
+        <Row>
+          <Onoma>utyf8</Onoma>
+          <Epitheto>mmm</Epitheto>
+          <Asm>975</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΔΝΕΑΣ</Bathmos>
+          <Idikotita>Τ/Φ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Γεμιστής-Προμηθ. (ΠΟΛ/ΤΗΣ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>1ο Στοιχείο Πολ/λων</Omada>
+        </Row>
+        <Row>
+          <Onoma>oiooi</Onoma>
+          <Epitheto>ssasa</Epitheto>
+          <Asm>875343</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΠΟΛ/ΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Α.Σ-Σκοπευτής(ΠΟΛ/ΤΗΣ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>2ο Στοιχείο Πολ/λων</Omada>
+        </Row>
+        <Row>
+          <Onoma>vvvvv</Onoma>
+          <Epitheto>zzzz</Epitheto>
+          <Asm>232345</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΠΟΛ/ΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Γεμιστής-Προμηθ. (ΠΟΛ/ΤΗΣ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>2ο Στοιχείο Πολ/λων</Omada>
+        </Row>
+        <Row>
+          <Onoma>olm</Onoma>
+          <Epitheto>olm</Epitheto>
+          <Asm>77430</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Ομαδάρχης (ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>Ομάδα Ολμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>ooo</Onoma>
+          <Epitheto>llll</Epitheto>
+          <Asm>998876</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΔΝΕΑΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Παρατηρητής Βολής(ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>Ομάδα Ολμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>bbb</Onoma>
+          <Epitheto>rr564</Epitheto>
+          <Asm>8754</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΛΧΙΑΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Αρχηγός Στοιχείου (ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>1ο Στοιχείο Όλμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>uytuyf</Onoma>
+          <Epitheto>vbcbvc</Epitheto>
+          <Asm>0</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΛΧΙΑΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Σκοπευτής (ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>1ο Στοιχείο Όλμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>ddd</Onoma>
+          <Epitheto>ddf6</Epitheto>
+          <Asm>988963</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Γεμιστής-Προμηθευτής (ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>1ο Στοιχείο Όλμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>erste</Onoma>
+          <Epitheto>jhvbjh</Epitheto>
+          <Asm>43564</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Αρχηγός Στοιχείου (ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>2ο Στοιχείο Ολμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>uyfuyfqq</Onoma>
+          <Epitheto>qqqq</Epitheto>
+          <Asm>553212</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Σκοπευτής (ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>2ο Στοιχείο Ολμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>ppoi</Onoma>
+          <Epitheto>pjh</Epitheto>
+          <Asm>4433</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Γεμιστής-Προμηθευτής (ΟΛΜ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>2ο Στοιχείο Ολμων</Omada>
+        </Row>
+        <Row>
+          <Onoma>rrytyyt</Onoma>
+          <Epitheto>aaaa</Epitheto>
+          <Asm>33200</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Α.Σ-Σκοπευτής(ΠΟΛ/ΤΗΣ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>3ο Στοιχείο Πολ/λων</Omada>
+        </Row>
+        <Row>
+          <Onoma>cccc</Onoma>
+          <Epitheto>xxxxxx</Epitheto>
+          <Asm>2100</Asm>
+          <Klasi>0</Klasi>
+          <Bathmos>ΣΤΡΤΗΣ</Bathmos>
+          <Idikotita>ΟΛΜΙΣΤΗΣ</Idikotita>
+          <Loxos>1ος Λόχος</Loxos>
+          <Kathikonta>Γεμιστής-Προμηθ. (ΠΟΛ/ΤΗΣ)</Kathikonta>
+          <Dimiria>Δρία Υποστηρίξεως</Dimiria>
+          <Omada>3ο Στοιχείο Πολ/λων</Omada>
+        </Row>
+      </fyi:Rows>
+    </DataSet>
+  </DataSets>
+  <PageHeader>
+    <Height>.5in</Height>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <Top>8.0pt</Top>
+        <Left>75.8pt</Left>
+        <Width>6in</Width>
+        <Height>.25in</Height>
+        <Value>ΠΙΝΑΚΑΣ ΣΥΓΚΡΟΤΗΣΗΣ</Value>
+        <Style>
+          <FontSize>15pt</FontSize>
+          <FontWeight>Bold</FontWeight>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+          <TextAlign>Center</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <Body>
+    <ReportItems>
+      <Table Name="Table1">
+        <DataSetName>Data</DataSetName>
+        <NoRows>Query returned no rows!</NoRows>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <TableColumns>
+          <TableColumn>
+            <Width>109.8pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>68.3pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>59.5pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>62.7pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>64.5pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>74.4pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>65.6pt</Width>
+          </TableColumn>
+        </TableColumns>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>24.8pt</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox3">
+                      <Value>
+                      </Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                  <ColSpan>8</ColSpan>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <TableGroups>
+          <TableGroup>
+            <Grouping Name="LoxosGroup">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Loxos.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtStart>false</PageBreakAtStart>
+              <PageBreakAtEnd>true</PageBreakAtEnd>
+            </Grouping>
+          </TableGroup>
+          <TableGroup>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <Height>22.4pt</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ColSpan>8</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="Textbox2">
+                          <Value>=Fields.Dimiria.Value+" - "+Fields.Loxos.Value</Value>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                            <BorderColor />
+                            <BorderWidth />
+                            <FontSize>14pt</FontSize>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingBottom>4pt</PaddingBottom>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+                <TableRow>
+                  <Height>24.8pt</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="Textbox13">
+                          <Value>Καθήκοντα</Value>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="Textbox10">
+                          <Value>Βαθμός</Value>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="Textbox4">
+                          <Value>Επώνυμο, Ονομα</Value>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <ColSpan>2</ColSpan>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="Textbox9">
+                          <Value>ΑΣΜ/Κλ.</Value>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="Textbox11">
+                          <Value>Ειδικότητα</Value>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="Textbox14">
+                          <Value>Τηλ. οικίας/κινητό</Value>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                            <BorderColor />
+                            <BorderWidth />
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <ColSpan>2</ColSpan>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+            </Header>
+            <Grouping Name="DimiriaGroup">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Dimiria.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtStart>false</PageBreakAtStart>
+              <PageBreakAtEnd>true</PageBreakAtEnd>
+            </Grouping>
+          </TableGroup>
+          <TableGroup>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <Height>12.8pt</Height>
+                  <TableCells>
+                    <TableCell>
+                      <ColSpan>8</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="Textbox15">
+                          <Value>=Fields.Omada.Value</Value>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <FontWeight>Bold</FontWeight>
+                            <BorderColor />
+                            <BorderWidth />
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                </TableRow>
+              </TableRows>
+              <RepeatOnNewPage>true</RepeatOnNewPage>
+            </Header>
+            <Grouping Name="OmadaGroup">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Omada.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </TableGroup>
+        </TableGroups>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>12pt</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Kathikonta">
+                      <Value>=Fields!Kathikonta.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Bathmos">
+                      <Value>=Fields!Bathmos.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Onoma">
+                      <Value>=Fields!Epitheto.Value+" "+Fields!Onoma.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderColor />
+                        <BorderWidth />
+                        <TextAlign>Center</TextAlign>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                  <ColSpan>2</ColSpan>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Asm">
+                      <Value>=Fields!Asm.Value+'/'+Fields!Klasi.Value</Value>
+                      <CanGrow>false</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Idikotita">
+                      <Value>=Fields!Idikotita.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Til_oikias">
+                      <Value>=Fields!Til_oikias.Value+', '+Fields!Til_kinito.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                  <ColSpan>2</ColSpan>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Left>3.7pt</Left>
+        <Top>3.2pt</Top>
+      </Table>
+    </ReportItems>
+    <Height>122.8pt</Height>
+  </Body>
+  <PageFooter>
+    <Height>14pt</Height>
+    <ReportItems>
+      <Textbox Name="Textbox26">
+        <Top>1pt</Top>
+        <Left>10pt</Left>
+        <Height>12pt</Height>
+        <Width>3in</Width>
+        <Value>=Globals!PageNumber + ' of ' + Globals!TotalPages</Value>
+        <Style>
+          <FontSize>10pt</FontSize>
+          <FontWeight>Normal</FontWeight>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <DataSources>
+    <DataSource Name="DS1">
+      <ConnectionProperties>
+        <DataProvider>SQLite</DataProvider>
+        <ConnectString>Data Source=C:\Users\Play\Desktop\army\arm\bin\Debug\personel.sqlite;Version=3;Pooling=True;Max Pool Size=100;</ConnectString>
+        <IntegratedSecurity>false</IntegratedSecurity>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+</Report>
